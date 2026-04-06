@@ -13,7 +13,7 @@ def get_posts():
     response = requests.request("GET", url, headers=headers, data=payload)
     return jsonify({
         "data": response.json(),
-        "status": "successfully done",
+        "status": "successfully",
         "status_code": 200
     })
 
